@@ -29,7 +29,7 @@ pipeline {
         }
       }
     }*/
-    stage('Build and Push Docker Image') {
+    /*stage('Build and Push Docker Image') {
       environment {
         DOCKER_IMAGE = "shivam139/ultimate-cicd:${BUILD_NUMBER}"
         // DOCKERFILE_LOCATION = "java-maven-sonar-argocd-helm-k8s/spring-boot-app/Dockerfile"
@@ -44,8 +44,8 @@ pipeline {
             }
         }
       }
-    }
-    stage('Update Deployment File') {
+    }*/
+    /*stage('Update Deployment File') {
         environment {
             GIT_REPO_NAME = "Jenkins-Zero-To-Hero"
             GIT_USER_NAME = "shivampawar183"
@@ -63,6 +63,6 @@ pipeline {
                 '''
             }
         }
-    }
+    }*/
   }
 }
